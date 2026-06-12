@@ -299,6 +299,11 @@
       border-radius: 6px;
       overflow: hidden;
       border: 1px solid #C8C8C8;
+
+    }
+
+    .table-wrapper {
+      overflow-x: auto;
     }
 
     .project-table th {
@@ -337,7 +342,6 @@
       font-family: "Monaco", "Courier New", monospace;
       font-size: 10px;
       color: #555;
-      white-space: nowrap;
     }
 
     /* ── Skills table ─────────────────────────────────────── */
@@ -645,29 +649,35 @@
         <p>Things I've built in my spare time. All source code on <a href="https://github.com/ivansokolov64">GitHub</a>.
         </p>
 
-        <table class="project-table">
-          <tr>
-            <th>Project</th>
-            <th>Description</th>
-            <th>Stack</th>
-            <th>Links</th>
-          </tr>
-          <tr>
-            <td class="proj-name">rslox</td>
-            <td>A Lox language interpreter built in Rust, following the <em>Crafting Interpreters</em> book by Robert
-              Nystrom.</td>
-            <td class="proj-lang">Rust</td>
-            <td><a href="https://github.com/ivansokolov64/rslox">Code</a></td>
-          </tr>
-          <tr>
-            <td class="proj-name">Little Hall Arts Society</td>
-            <td>Not a programming project, but a student theatre group I founded at my residential college. We are soon
-              putting on our third show, and we have engaged over 100 participants, and over 500 audience members in the
-              past year alone! </td>
-            <td class="proj-lang">Theatre, Dance, Music</td>
-            <td><a href="https://instagram.com/littlehallarts">Instagram</a></td>
-          </tr>
-        </table>
+        <div class="table-wrapper">
+          <table class="project-table">
+            <tr>
+              <th>Project</th>
+              <th>Description</th>
+              <th>Stack</th>
+              <th>Links</th>
+            </tr>
+            <tr>
+              <td class="proj-name">rslox</td>
+              <td>A Lox language interpreter built in Rust, following the <em>Crafting Interpreters</em> book by Robert
+                Nystrom.</td>
+              <td class="proj-lang">Rust</td>
+              <td><a href="https://github.com/ivansokolov64/rslox">Code</a></td>
+            </tr>
+            <tr>
+              <td class="proj-name">Little Hall Arts Society</td>
+              <td>Not a programming project, but a student theatre group I founded at my residential college. We are
+                soon
+                putting on our third show, and we have engaged over 100 participants, and over 500 audience members in
+                the
+                past year alone! </td>
+              <td class="proj-lang">Theatre, Dance, Music</td>
+              <td><a href="https://instagram.com/littlehallarts">Instagram</a></td>
+            </tr>
+          </table>
+        </div>
+
+
 
         <hr>
 
